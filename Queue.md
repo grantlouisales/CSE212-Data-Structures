@@ -7,8 +7,24 @@ When you were little do you remember hearing the ice cream truck drive around yo
 * Video games to keep track of the most recent input 
 
 <br>
+<br>
 
-Using an example above lets create a list of customers and the order in which they are called. Queues are very easily applied using lists. For the tutorial we will be using lists to use Queues.
+## Python list functionality
+Queues are very easily applied using lists. For the tutorial we will be using lists to learn Queues. Queues, like customer lines, need to allow people to go to the back of the line and leave the line after they have been helped. Here are some python list methods needed to compliment Queues:
+
+<br>
+
+|       Description         |      Python Code      |     Performance     | 
+|      :-----------:        |     :------------:    |     :-----------:   |
+|Add value to end of queue  |  queue.append(value)  |         O(1)        |
+|Remove value from front of queue| value = queue.pop(0)|      O(n)        |
+|Get length of queue        |   length = len(queue) |         O(1)        |
+|Check if queue is empty    | if len(queue) == 0:   |         O(1)        |
+
+<br>
+<br>
+
+Using an example from above lets create a list of customers to imitate a line. This will be showing how to use all of the list functions up above.
 
 ``` python
 # Create a list of customers.
@@ -27,4 +43,14 @@ while len(list_of_customers) != 0:
 # 2nd iteration output: Jane Doe ['Bob the builder', 'Michael Jordan']
 # 3rd iteration output: Bob the builder ['Michael Jordan']
 # 4th iteration output: Michael Jordan []
+
+
+# Use the append function to add customers to the queue
+list_of_customers.append("Steph Curry")
+list_of_customers.append("J.R Smith") 
+print(list_of_customers) # Output ["Steph Curry", "J.R Smith"]
 ```
+<br>
+<br>
+
+# Example: 

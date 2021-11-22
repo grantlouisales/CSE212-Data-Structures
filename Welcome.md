@@ -4,7 +4,7 @@
 
 Welcome to the python data structures turoial. These data structures are critical for programmers to learn. The better you get with using them, the better developer you will be. The data structures are:
 
-- [Queue]()
+- [Queue](Queue.md)
 - [Sets]()
 - [Binary Search Trees]()
 
