@@ -28,6 +28,7 @@ As you can see up above the most time consuming performance was to remove an ite
 
 * Easy to learn
 * Organized
+* Dont need to know what is next since a queue is used for FIFO
 * Can use queues after only knowing a couple of python functionality
 
 <br>
@@ -64,6 +65,16 @@ print(list_of_customers) # Output ["Steph Curry", "J.R Smith"]
 <br>
 
 # Problem to solve
+We will be going back and coding out the ice cream scenario and create the line for it. We will need mutiple things to make this scenario. Things we need to include:
+* A way to add people to the line
+* A way to remove the first person from the line
+* Dont add a person to the line if the line is over 10 people
+* If out of ice cream end the program
+
+I will be giving supplying the function names and some other stuff in the program to make it easier. Here are the functions and how they will be used in the program.
+``` python
+TODO: program
+``` 
 
 
 
