@@ -22,9 +22,19 @@ Queues are very easily applied using lists. For the tutorial we will be using li
 |Check if queue is empty    | if len(queue) == 0:   |         O(1)        |
 
 <br>
+
+## Why use queues over other data structures
+As you can see up above the most time consuming performance was to remove an item from the queue. The performance was a worst case scenario of O(n) time. The reason why the .pop() method has this performance is because if you need to pop off the last item in the queue you would have to check every item in the queue before you got to the wanted index. Queues are very great performance wise but lets talk about why else it is good. Some of the reasons are:
+
+* Easy to learn
+* Organized
+* Can use queues after only knowing a couple of python functionality
+
 <br>
 
 Using an example from above lets create a list of customers to imitate a line. This will be showing how to use all of the list functions up above.
+
+# Example
 
 ``` python
 # Create a list of customers.
@@ -53,4 +63,10 @@ print(list_of_customers) # Output ["Steph Curry", "J.R Smith"]
 <br>
 <br>
 
-# Example: 
+# Problem to solve
+
+
+
+You can check your code with the solution here: [Solution](Queue_solution.py)
+
+[Back to Welcome Page](Welcome.md)
