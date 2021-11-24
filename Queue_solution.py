@@ -60,7 +60,6 @@ class Ice_cream_truck:
         names = ""
         for name in self.line:
             names += name + " "
-
         return front + names + end
 
 
