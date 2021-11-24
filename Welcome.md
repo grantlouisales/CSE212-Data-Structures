@@ -16,6 +16,6 @@ Each module will contain real-life examples and descriptions on the data structu
 
 If there are any questions you can reach me at:
 
-Grant Ales, BYU-Idaho, CSE 212, Section 1
+Grant Ales, BYU-Idaho, CSE 212, Section 3
 
 ale17001@byui.edu
