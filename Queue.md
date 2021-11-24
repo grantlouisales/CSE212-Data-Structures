@@ -75,7 +75,7 @@ We will be going back and coding out the ice cream scenario and create the line 
 * Dont add a person to the line if the line is over 10 people
 * If out of ice cream end the program
 
-I will be giving supplying the function names and some other stuff in the program to make it easier. Here are the functions and how they will be used in the program. Here is the template:
+I will be supplying the function names and some other stuff in the program to make it easier. Here are the functions and how they will be used in the program. Here is the template:
 
 ``` python
 class Ice_cream_truck:
