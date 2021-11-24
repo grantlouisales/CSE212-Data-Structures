@@ -88,7 +88,11 @@ class Ice_cream_truck:
     def add_to_line(self, name):
         """
         Purpose: Add a person to the end of the line
-        with the name given as an argument.
+        with the name given as an argument. Have a 
+        conditional that will compare the queue size
+        to the max size and return a phrase saying
+        you cant add more people since the max size has
+        been reached.
         """
         pass
 
