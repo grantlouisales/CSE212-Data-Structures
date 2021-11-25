@@ -8,8 +8,8 @@ When you were little do you remember hearing the ice cream truck drive around yo
 
 <br>
 
-Here is a diagram of OS processes using Queues:
-![Queue Example](Images/QueueProcessExample.png)
+Here is a diagram of using Queues:
+![Queue Example](Images/QueueExample.png)
 
 <br>
 
