@@ -5,8 +5,8 @@
 Welcome to the python data structures turoial. These data structures are critical for programmers to learn. The better you get with using them, the better developer you will be. The data structures are:
 
 - [Queue](Queue.md)
-- [Sets]()
-- [Binary Search Trees]()
+- [Sets](Sets.md)
+- [Binary Search Trees](BinarySearchTree.md)
 
 Each module will contain real-life examples and descriptions on the data structure. At the end of the module you will find a problem to solve regarding the data structure learned. There will be a solution to the problem that you can look at after you have attempted the problem first.
 

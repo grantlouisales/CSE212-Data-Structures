@@ -197,6 +197,6 @@ print(line) # Ouptut: [ ]
 Play around with it a little! If you want to dive in fully, add more tests, or add more to the class! Add a method that will allow people to ask how much ice cream they want and deduct that from the stock. You can have a lot of fun with Queues and create many functional programs! Explore and enjoy!
 
 
-You can check your code with the solution here: [Solution](Queue_solution.py)
+You can check your code with the solution here: [Solution](SourceCodes/Queue_solution.py)
 
 [Back to Welcome Page](Welcome.md)
