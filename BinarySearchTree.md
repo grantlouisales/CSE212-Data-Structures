@@ -9,18 +9,17 @@ After you have tried to figure out where the 9 goes lets go over it together! Fi
 
 ## Performance Table
 
-|       Description         |      Performance     | 
-|      :-----------:        |     :------------:   |
-|  Adding node to the BST   |       O(log n)       |  
-|  Removing node from BST   |       O(log n)       |  
-|  Traversing through BST   |       O(log n)       |  
-|  Checking if value in BST |       O(log n)       |  
-|  Height of node in BST    |       O(log n)       |  
-|  Determine if BST is empty|       O(1)           |  
-|  Determining size of BST  |       O(1)           |  
+|       Description         |      Performance     |        Code        |
+|      :-----------:        |     :------------:   | :---------------:  |
+|  Adding node to the BST   |       O(log n)       |    BST.insert(Node)|
+|  Removing node from BST   |       O(log n)       |    BST.remove(Node)|
+|  Traversing through BST   |       O(log n)       |    traverse_forwards and traverse_rerse          |
+|  Checking if value in BST |       O(log n)       |    Contains(Values)|
+|  Height of node in BST    |       O(log n)       |    BST.height(Node)|
+|  Determine if BST is empty|       O(1)           |    BST.empty()     |
+|  Determining size of BST  |       O(1)           |    BST.size()      |
 
-
-
+<br>
 
 ## Balanced BST
 BST's like above are great because of the speed of them.
