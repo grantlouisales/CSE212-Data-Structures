@@ -19,6 +19,9 @@ After you have tried to figure out where the 9 goes lets go over it together! Fi
 |  Determine if BST is empty|       O(1)           |    BST.empty()     |
 |  Determining size of BST  |       O(1)           |    BST.size()      |
 
+
+As you can see every functionality to a BST is O(log n) or faster. For example, lets say we are looking for the node containing the number 5 and the root node contains the number 1. Since we know 5 is greater than 1 we don't even have to search through the left side of the BST. See how fast that is? With just the first comparison we can cut the search by half immediately.
+
 <br>
 
 ## Balanced BST
