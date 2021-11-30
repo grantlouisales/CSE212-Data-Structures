@@ -1,9 +1,7 @@
 class BST:
     """
-    Implement the Binary Search Tree (BST) data structure.  The Node 
-    class below is an inner class.  An inner class means that its real 
-    name is related to the outer class.  To create a Node object, we will 
-    need to specify BST.Node
+    Implement the Binary Search Tree (BST) data structure. We will create
+    a inner class of node for the BST class.
     """
 
     class Node:
@@ -14,8 +12,7 @@ class BST:
 
         def __init__(self, data):
             """
-            Initialize the attributes needed for the 
-            node class.
+            Initialize the node class.
             """
             self.data = data
             self.left = None
@@ -31,10 +28,10 @@ class BST:
 
     def insert(self, data):
         """
-        Insert 'data' into the BST.  If the BST
-        is empty, then set the root equal to the new 
-        node.  Otherwise, use _insert to recursively
-        find the location to insert.
+        This method will check if the root is None.
+        The reason for this is because if the BST is empty,
+        it will make the node the root. If the BST is not empty,
+        traverse through the tree to find the spot to add the node.
         """
         if self.root is None:
             self.root = BST.Node(data)
@@ -44,13 +41,14 @@ class BST:
 
     def _insert(self, data, node):
         """
-        This function will look for a place to insert a node
-        with 'data' inside of it.  The current sub-tree is
-        represented by 'node'.  This function is intended to be
-        called the first time by the insert function.
+        This function will look for a place to insert a node to 
+        the BST. If the user tries to add a number that is not
+        unique, it will return ending the _insert method.
+
+        I have added mistakes to the code for you to figure out.
+        Hint: draw the insert function on paper and see what is
+        acutally happening. Are they going to the right spots?
         """
-        # If the user tries to add a number that is not
-        # unique, it will return ending the _insert method.
         if data == node.data:
             return
 
@@ -72,49 +70,14 @@ class BST:
                 # Need to keep looking.  Call _insert
                 # recursively on the right sub-tree.
                 self._insert(data, node.right)
-
-
-    def get_height(self):
-        """
-        Determine the height of the BST.  Note that an empty tree
-        will have a height of 0 and a tree with one item (root) will
-        have a height of 1.
-        
-        If the tree is empty, then return 0.  Otherwise, call 
-        _get_height on the root which will recursively determine the 
-        height of the tree.
-        """
-        if self.root is None:
-            return 0
-        else:
-            return self._get_height(self.root)  # Start at the root
-
-
-    def _get_height(self, node):
-        """
-        Determine the height of the BST.  The height of a sub-tree 
-        (represented by 'node') is 1 plus the height of either the 
-        left sub-tree or the right sub-tree (whichever one is bigger).
-
-        This function intended to be called the first time by 
-        get_height.
-        """
-
-        # If node is none return 0
-        if node is None:
-            return 0
-
-        # Get left tree height by adding 1 everytime you recurse.
-        # Do the same with the right. Then use max function to get the
-        # biggest height of the two trees.
-        return max(1 + self._get_height(node.left), 1 + self._get_height(node.right))
-
+                
 
     def empty(self):
         """
         Return True if tree is empty, return false
         if not empty.
         """
+        # pass
         return self.root is None
 
 
@@ -166,32 +129,10 @@ class BST:
         """
         yield from self._traverse_forward(self.root)  # Start at the root
 
-
     def _traverse_forward(self, node):
         """
-        Does a forward traversal (in-order traversal) through the 
-        BST.  If the node that we are given (which is the current
-        sub-tree) exists, then we will keep traversing on the left
-        side (thus getting the smaller numbers first), then we will 
-        provide the data in the current node, and finally we will 
-        traverse on the right side (thus getting the larger numbers last).
-
-        The use of the 'yield' will allow this function to support loops
-        like:
-
-        for value in my_bst:
-            print(value)
-
-        The keyword 'yield' will return the value for the 'for' loop to
-	    use.  When the 'for' loop wants to get the next value, the code in
-	    this function will start back up where the last 'yield' returned a 
-	    value.  The keyword 'yield from' is used when our generator function
-        needs to call another function for which a `yield` will be called.  
-        In other words, the `yield` is delegated by the generator function
-        to another function.
-
-        This function is intended to be called the first time by 
-        the __iter__ function.
+        This function allows us to iterate through
+        the BST and output the tree in order.
         """
         if node is not None:
             yield from self._traverse_forward(node.left)
@@ -212,10 +153,16 @@ class BST:
     def _get_sum(self, node):
 
         """
-        Add the left side with recursion and add the right
-        side with recursion and then add that to the total and
-        return the total.
+        Traverse through the BST and add all the data together.
+
+        Find the sum of all the node's data and return the total.
+        Hint: traverse through the left sub-tree and get the sum, 
+        traverse through the right sub-tree and get the sum, after that
+        is done add the node, left sub-tree sum, and the right sub-tree sum
+        together to get the sum of the whole tree.
         """
+        # pass
+
         total, left, right = 0, 0, 0
 
         if node is None:
@@ -236,7 +183,6 @@ class BST:
         return total
 
 
-# Sample Test Cases (may not be comprehensive)
 print("\n=========== PROBLEM 1 TESTS ===========")
 tree = BST()
 tree.insert(4)
@@ -245,7 +191,39 @@ tree.insert(5)
 tree.insert(6)
 tree.insert(3)
 tree.insert(1)
-# print("Sum of given tree is: " + str(tree.get_sum()))
 
-for x in tree:
+# Output: 1, 2, 3, 4, 5, 6
+for x in tree: 
     print(x) 
+
+
+print("\n=========== PROBLEM 2 TESTS ===========")
+print(tree.empty()) # Output: False
+
+# Create an empty tree.
+tree2 = BST()
+print(tree2.empty()) # Output: True
+tree2.insert(3)
+tree2.insert(15)
+tree2.insert(-21)
+tree2.insert(82)
+print(tree2.empty())  # Output: False
+
+print("\n=========== PROBLEM 3 TESTS ===========")
+print(10 in tree2) # False
+print(15 in tree2) # True
+print(1 in tree2) # False
+print(3 in tree2) # True
+
+print("\n=========== PROBLEM 4 TESTS ===========")
+tree3 = BST()
+tree3.insert(15)
+tree3.insert(4)
+tree3.insert(81)
+tree3.insert(90)
+tree3.insert(-10)
+tree3.insert(-5)
+tree3.insert(8)
+print("Sum of tree is: " + str(tree.get_sum())) # Output: 21
+print("Sum of tree2 is: " + str(tree2.get_sum())) # Output: 79
+print("Sum of tree3 is: " + str(tree3.get_sum())) # Output: 183
