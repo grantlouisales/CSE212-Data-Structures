@@ -97,6 +97,10 @@ def _insert(self, data, node):
 
 # Problem to solve
 
+* Add sub trees
+* Get Height of BST
+* Create a balanced BST
+
 You can check your code with the solution here: [Solution](SourceCodes/BST_solution.py)
 
 [Back to Welcome Page](Welcome.md)
