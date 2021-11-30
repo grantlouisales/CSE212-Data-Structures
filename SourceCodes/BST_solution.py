@@ -1,14 +1,3 @@
-"""
-CSE212 
-(c) BYU-Idaho
-09-Prove - Problems
-
-It is a violation of BYU-Idaho Honor Code to post or share this code with others or 
-to post it online.  Storage into a personal and private repository (e.g. private
-GitHub repository, unshared Google Drive folder) is acceptable.
-"""
-
-
 class BST:
     """
     Implement the Binary Search Tree (BST) data structure.  The Node 
@@ -247,11 +236,6 @@ class BST:
         return total
 
 
-
-
-
-
-
 # Sample Test Cases (may not be comprehensive)
 print("\n=========== PROBLEM 1 TESTS ===========")
 tree = BST()
@@ -261,7 +245,7 @@ tree.insert(5)
 tree.insert(6)
 tree.insert(3)
 tree.insert(1)
-print(tree.get_sum())
+# print("Sum of given tree is: " + str(tree.get_sum()))
 
 for x in tree:
     print(x) 
