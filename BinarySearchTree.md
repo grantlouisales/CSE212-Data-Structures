@@ -274,6 +274,7 @@ class BST:
         """
         pass
 
+
 print("\n=========== PROBLEM 1 TESTS ===========")
 tree = BST()
 tree.insert(4)

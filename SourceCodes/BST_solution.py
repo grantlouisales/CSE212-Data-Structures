@@ -161,8 +161,6 @@ class BST:
         is done add the node, left sub-tree sum, and the right sub-tree sum
         together to get the sum of the whole tree.
         """
-        # pass
-
         total, left, right = 0, 0, 0
 
         if node is None:
