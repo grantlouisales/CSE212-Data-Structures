@@ -42,7 +42,7 @@ As you can see the right sub-tree is so much bigger than the left side. Now lets
 
 ![Rearranged BST](/Images/RearrangedBST.png)
 
-Now lets try to find 6 again and how long it takes. The amount of nodes checked will be 3 compared to 5. Might not seem like aa crazy jump but, lets say this BST had 10,000 nodes and trying to look for the node with the value 9288. If the BST was unbalanced it would take a much longer amount of time to find the value.
+Now lets try to find 6 again and how long it takes. The amount of nodes checked will be 3 compared to 5. Might not seem like a crazy jump but, lets say this BST had 10,000 nodes and trying to look for the node with the value 9288. If the BST was unbalanced it would take a much longer amount of time to find the value.
 
 <br>
 
