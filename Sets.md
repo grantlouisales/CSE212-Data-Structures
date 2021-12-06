@@ -22,6 +22,7 @@ print(set_4) # Result: 1,2,3,4,5,6,7,8
 for i in set_4: # Result: 1,2,3,4,5,6,7,8
     print(i)
 ```
+
 ![Different kinds of Sets](Images/PythonSetOperations.jpg)
 
 ## Performance of Sets
@@ -36,6 +37,17 @@ for i in set_4: # Result: 1,2,3,4,5,6,7,8
 The performance of sets are really fast. With almost every function of O(1) time 
 the processing is almost instantaneous.
 
+
+## Problem to solve
+Lets say you were asked by a company to find 2 things for their company. They want you to do certain things regarding their social media followers. These things include:
+* Find out common customers on multiple social media platforms 
+* Make one set that has all customers of social media platforms and no duplicates.
+* Remove people from both sets since they need to be blocked.
+
+Find out how to complete these tasks using sets. I will provide many things including a list of names for the platforms and templated functions. Here is the template to use:
+``` python
+
+```
 
 You can check your code with the solution here: [Solution](SourceCodes/Set_solution.py)
 
