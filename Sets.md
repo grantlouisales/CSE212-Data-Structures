@@ -1,5 +1,5 @@
 # Sets
-Sets are another way to store data in python. What makes sets different between dictionaries, lists, and tuples are that they are unchangable, have no indexes, and have no duplicates. Sets are great for many things and can be used to find the difference between two sets or similarities between two sets. This can be done using the ***Union*** and ***Intersection*** methods. 
+Sets are another way to store data in python. What makes sets different between dictionaries, lists, and tuples are that they are unchangable, unordered, have no indexes, and have no duplicates. Sets are great for many things and can be used to find the difference between two sets or similarities between two sets. This can be done using the ***Union*** and ***Intersection*** methods. 
 
 ## Union
 Union returns a set that contains all of the items from both sets, duplicates are not included. Union can be used using multiple sets, it can be used with 2 sets or even 10 sets. If an item is in more than one set, the union set will contain only one appearance of that item. A great use of this would be to fiddle out all of the duplicates in a list. If you compare two lists and want to get rid of duplicates in both lists, union will fix this.
